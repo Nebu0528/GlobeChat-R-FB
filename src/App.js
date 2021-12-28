@@ -51,8 +51,8 @@ function SignIn() {
   const signInWithGoogle = () => {
     auth.useDeviceLanguage();
     const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  }
+    auth.signInWithPopup(provider).catch(error => console.error(error));
+    }
 
   //Anonymous Sign in
   const signInAnonymously = () => {
