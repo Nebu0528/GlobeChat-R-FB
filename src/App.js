@@ -49,6 +49,7 @@ function App() {
 function SignIn() {
 
   const signInWithGoogle = () => {
+    auth.useDeviceLanguage();
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
