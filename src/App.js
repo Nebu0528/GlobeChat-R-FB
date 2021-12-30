@@ -54,6 +54,8 @@ function SignIn() {
     auth.signInWithPopup(provider).catch(error => console.error(error));
     }
 
+
+
   //Anonymous Sign in
   const signInAnonymously = () => {
     auth.useDeviceLanguage();
@@ -66,13 +68,18 @@ function SignIn() {
       .catch(error => alert(error));
   }
 
+
   return (
-    <>
-      <p>A live chatting web application</p>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <button className="sign-in" onClick={signInAnonymously}>Sign in Anonymously</button>
-      
-    </>
+     
+      <div id="login-card">
+      <h3>A live chatting web application</h3> 
+      <p>Made by Neel B</p>
+      <br />
+      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>      <br />
+
+      <br /> < button className="sign-in" onClick={signInAnonymously}>Sign in Anonymously</button>
+      </div>
+
   )
 
 }
