@@ -61,7 +61,6 @@ function SignIn() {
     auth.useDeviceLanguage();
     auth.signInAnonymously().then(user => {
       user.user.updateProfile({
-        displayName: "Anonymous " + (Math.random() * 999999 + 1).toFixed(0),
         photoURL: "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
       })
     })
@@ -97,7 +96,7 @@ function SignOut() {
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limitToLast(25);
+  const query = messagesRef.orderBy('createdAt').limitToLast(50);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
