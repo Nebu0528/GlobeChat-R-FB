@@ -1,4 +1,4 @@
-Globe Chat is a real-time web app used to chat with anyone around the workd. THe users can sign in with their Google accounts or log in anonymously to be able to chat with other users in a single chat room.
+Globe Chat is a real-time web app used to chat with anyone around the workd. The users can sign in with their Google accounts or log in anonymously to be able to chat with other users in a single chat room.
 
 Built with Javascript using React.
 Utilized Firebase to store user data and messages.
