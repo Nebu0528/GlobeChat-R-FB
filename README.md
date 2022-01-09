@@ -2,7 +2,7 @@ Globe Chat is a real-time web app used to chat with anyone around the workd. The
 
 Built with Javascript using React.
 Utilized Firebase to store user data and messages.
-Enabled GoogleAuth and AnonymousAuth to allow users to log in using their accounts
+Enabled GoogleAuth and AnonymousAuth to allow users to log in using their accounts or anonymously if they wish
 
 ![image](https://user-images.githubusercontent.com/85001440/147839391-8b636fb9-d29d-4340-b9aa-397bafe3eb28.png)
 
