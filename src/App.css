@@ -101,6 +101,13 @@ button {
   display: inline-block;
 }
 
+.btn-1:hover{
+  background-color: green;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px 
+  #ff96ad, 0 0 50px #ff96ad, 0 0 200px 
+  #ff96ad;
+}
+
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;

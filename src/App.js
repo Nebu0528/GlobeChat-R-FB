@@ -33,7 +33,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1> CHAT 💬</h1>
+        <h1>
+        <a> GLOBE CHAT 💬</a>
+        </h1>
         <SignOut />
       </header>
 
